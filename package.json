@@ -1,0 +1,32 @@
+{
+  "name": "linter-json-lint",
+  "main": "./lib/init",
+  "version": "0.1.0",
+  "description": "Lint `json` on the fly, using json-lint",
+  "repository": "https://github.com/josa42/atom-linter-json-lint",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint lib"
+  },
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "dependencies": {
+    "atom-package-deps": "^3.0.2",
+    "json-lint": "^0.1.0 "
+  },
+  "package-deps": [
+    "linter"
+  ],
+  "providedServices": {
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
+    }
+  },
+  "devDependencies": {
+    "babel-eslint": "^4.1.5",
+    "eslint": "^1.10.3"
+  }
+}

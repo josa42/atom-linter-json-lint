@@ -1,7 +1,7 @@
 {
   "name": "linter-json-lint",
   "main": "./lib/init",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Lint `json` on the fly, using json-lint",
   "repository": "https://github.com/josa42/atom-linter-json-lint",
   "license": "MIT",

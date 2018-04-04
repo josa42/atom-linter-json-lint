@@ -13,7 +13,7 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
-    "atom-package-deps": "^4.0.1",
+    "atom-package-deps": "^4.6.2",
     "json-lint": "^0.1.0 "
   },
   "package-deps": [
@@ -27,6 +27,6 @@
     }
   },
   "devDependencies": {
-    "standard": "^10.0.3"
+    "standard": "^11.0.1"
   }
 }

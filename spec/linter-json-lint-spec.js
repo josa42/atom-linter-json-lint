@@ -16,8 +16,8 @@ describe('Lint json', () => {
         lint(path.join(__dirname, 'files', 'empty.json'))
           .then((messages) => {
             expect(messages.length).toEqual(1)
-            expect(messages[0].text).toEqual('Invalid JSON, no content.')
-            expect(messages[0].range).toEqual([[0, 0], [0, 1]])
+            expect(messages[0].description).toEqual('Invalid JSON, no content.')
+            expect(messages[0].location.position).toEqual([[0, 0], [0, 1]])
           })
       )
     })
@@ -40,8 +40,8 @@ describe('Lint json', () => {
         lint(path.join(__dirname, 'files', 'comments.json'))
           .then((messages) => {
             expect(messages.length).toEqual(1)
-            expect(messages[0].text).toEqual('Unknown Character \'/\', expecting a string for key statement.')
-            expect(messages[0].range).toEqual([[1, 2], [1, 3]])
+            expect(messages[0].description).toEqual('Unknown Character \'/\', expecting a string for key statement.')
+            expect(messages[0].location.position).toEqual([[1, 2], [1, 3]])
           })
       )
     })

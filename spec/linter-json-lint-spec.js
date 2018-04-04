@@ -2,6 +2,7 @@
 
 import path from 'path'
 import { resetConfig, lint } from './test-helper'
+const { atom, it, describe, beforeEach, waitsForPromise, expect } = global
 
 describe('Lint json', () => {
   beforeEach(() => {
@@ -23,7 +24,6 @@ describe('Lint json', () => {
   })
 
   describe('Comments', () => {
-
     it('retuns no errors, if comments are allowed', () => {
       atom.config.set('linter-json-lint.allowComments', true)
 

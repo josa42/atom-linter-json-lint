@@ -6,7 +6,8 @@
   "repository": "https://github.com/josa42/atom-linter-json-lint",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint **/*.js"
+    "lint": "standard",
+    "lint:fix": "standard --fix"
   },
   "engines": {
     "atom": ">0.50.0"
@@ -26,7 +27,6 @@
     }
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.1",
-    "eslint": "^2.10.0"
+    "standard": "^10.0.3"
   }
 }
